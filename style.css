@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=roboto+")
+
+
+
+}
+
+.titulo-principal{
+    font-family: var(--roboto-mono);
+    font-size: 32px;
+
+}
+
+.titulo-secundario{
+    font-size: 24px;
+}
+
+.conteudo-titulo{
+    text-align: center;
+    margin-top: 80px;
+
+}
