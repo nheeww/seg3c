@@ -1,34 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+mono&display=swap');
+:root {
+    --cor-fundo: #01080E;
+    --cor-principal: #0B0D20 ;
+    --cor-secundaria: #212333;
+    --cor-destaque: #2BDEFD;
+    --cor-texto: #D7F9FF;
+  }
 
-:root{
-    --branco: white;
-    --cor-de-fundo: #00162E;
-    --fundo-senha: #00244D;
-    --fundo-texto: #001E40;
-    --borda: #0075ff;
-    --roboto: 'Roboto', sans-serif;
-    --roboto-mono: 'Roboto Mono', monospace;
-}
+  body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
 
-body{
-    color:var(--branco);
-    background-color: var(--cor-de-fundo);
-    font-family: var(--roboto);
-}
-
-.titulo-principal{
-    font-family: var(--roboto-mono);
-    font-size: 32px;
-
-}
-
-.titulo-secundario{
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.conteudo-titulo{
+  .caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
     text-align: center;
-    margin-top: 80px;
+    padding: 20px;
+  }
 
+  h1{
+    color: var(--cor-destaque);
+   }
+   
+/* código escondido */
+
+button {
+  background-color: var(--cor-principal);
+  color: var(--cor-destaque);
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-secundaria);
 }
